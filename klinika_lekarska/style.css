@@ -1,0 +1,135 @@
+
+
+
+
+
+body {
+
+    background-image: url(paints/clinic_background.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    
+
+}
+
+*{
+
+    font-family: cursive;
+
+    box-sizing: padding-box;
+
+}
+
+form {
+
+    width: 200px;
+    border: 3px solid rgb(177, 142, 142);
+    padding: 20px;
+    background: rgb(2, 74, 102);
+    border-radius: 20px;
+    align-items: center;
+
+}
+form:hover {
+    box-shadow: 0 0 100px rgb(14, 3, 65); /* Dodajemy cień podczas najechania myszką */
+}
+
+h2 {
+
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+input {
+
+    display: block;
+    border: 2px solid #ccc;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+
+}
+
+label {
+
+    color: #888;
+    font-size: 18px;
+    padding: 10px;
+
+}
+
+button {
+
+    float: right;
+    background: rgb(35, 174, 202);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: none;
+    align-items: center;
+
+}
+
+button:hover{
+
+    opacity: .100;
+
+}
+
+.error {
+
+   background: #F2DEDE;
+   color: #0c0101;
+   padding: 10px;
+   width: 95%;
+   border-radius: 5px;
+   margin: 20px auto;
+
+}
+
+/*h1 {
+    align-items: center;
+    text-align: center;
+    color: rgb(134, 3, 3);
+    position: absolute;
+    top: 0;
+    font-size: 50px;
+    font-weight: 200;
+    font-style: oblique;
+    border: 5px solid #333;
+    padding: 10px;
+    background-color: rgb(0, 17, 71);
+}*/
+img
+{
+    position: absolute;
+    top: 0;
+    
+}
+
+a {
+
+    float: right;
+    background: rgb(183, 225, 233);
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    text-decoration: none;
+
+}
+
+a:hover{
+
+    opacity: .7;
+
+}
