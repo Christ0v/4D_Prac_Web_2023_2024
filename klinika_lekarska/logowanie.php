@@ -16,7 +16,7 @@
     <!--<h1>ArachNet Private Hospital Center</h1>-->
      <form action="logowanie.php" method="post">
 
-        <h2>LOGIN</h2>
+        <h2>PANEL LOGOWANIA</h2>
 
         <label>Imię</label>
         <input type="text" name="imie" placeholder="Podaj imię"><br>

@@ -6,10 +6,10 @@
 body {
 
     background-image: url(paints/clinic_background.jpg);
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(20,20,254,1) 35%, rgba(2,194,255,1) 94%, rgba(0,212,255,1) 100%);*/
     background-repeat: no-repeat;
     display: flex;
     background-size: cover;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
@@ -27,16 +27,19 @@ body {
 
 form {
 
-    width: 200px;
-    border: 3px solid rgb(177, 142, 142);
+    width: 400px;
+    border: 3px solid rgb(21, 0, 255);
     padding: 20px;
-    background: rgb(2, 74, 102);
+    background: rgb(255, 255, 255);
     border-radius: 20px;
-    align-items: center;
-
+    /*align-items: center;*/
+    /*margin-top: 0;*/
+    left: 20%;
+    margin-top: 10cm;
+    
 }
 form:hover {
-    box-shadow: 0 0 100px rgb(14, 3, 65); /* Dodajemy cień podczas najechania myszką */
+    box-shadow: 0 0 100px rgb(14, 3, 65);
 }
 
 h2 {
@@ -49,7 +52,7 @@ h2 {
 input {
 
     display: block;
-    border: 2px solid #ccc;
+    border: 2px solid #087e9b;
     width: 95%;
     padding: 10px;
     margin: 10px auto;
@@ -110,6 +113,7 @@ button:hover{
 }*/
 img
 {
+    width: 700px;
     position: absolute;
     top: 0;
     
