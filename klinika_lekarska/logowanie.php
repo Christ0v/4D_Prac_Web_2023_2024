@@ -12,21 +12,24 @@
 </head>
 
 <body>
-    <img src="paints/arach_logo.png" alt="Logo firmy">
+    <section class = "login_left">
+        <img class="logo" src="paints/arach_logo.png" alt="Logo firmy">
+        <h1 class = "witamy">Witamy!</h1>
+    </section>
+    
+    <section class = "login_right">
     <!--<h1>ArachNet Private Hospital Center</h1>-->
-     <form action="logowanie.php" method="post">
-
-        <h2>PANEL LOGOWANIA</h2>
-
-        <label>Imię</label>
+        <form action="logowanie.php" method="post">
+        <img class="ludzik" src="paints/login_person.png" alt="Ludzik">
+        <!-- <label>Imię</label> -->
         <input type="text" name="imie" placeholder="Podaj imię"><br>
 
-        <label>Nazwisko</label>
+        <!-- <label>Nazwisko</label> -->
         <input type="text" name="nazwisko" placeholder="Podaj nazwisko"><br>
 
-        <label>Hasło</label>
+        <!-- <label>Hasło</label> -->
         <input type="password" name="haslo" placeholder="Podaj hasło"><br> 
-
+    
         <button type="submit">Login</button>
 
      </form>
@@ -46,7 +49,7 @@
         echo"Wypełnij dane!";
     }
      ?>
-
+    </section>
 </body>
 
 </html>
