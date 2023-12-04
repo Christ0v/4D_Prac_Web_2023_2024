@@ -17,7 +17,7 @@
         <h1 class = "witamy">Witamy!</h1>
     </section>
     
-    <section class = "login_right">
+    <section class = "login_center">
     <!--<h1>ArachNet Private Hospital Center</h1>-->
         <form action="logowanie.php" method="post">
         <img class="ludzik" src="paints/login_person.png" alt="Ludzik">
@@ -31,7 +31,6 @@
         <input type="password" name="haslo" placeholder="Podaj hasło"><br> 
     
         <button type="submit">Login</button>
-
      </form>
      <?php
      if (!empty($_POST)) { 
@@ -49,6 +48,8 @@
         echo"Wypełnij dane!";
     }
      ?>
+    </section>
+    <section class ="login_right">
     </section>
 </body>
 
