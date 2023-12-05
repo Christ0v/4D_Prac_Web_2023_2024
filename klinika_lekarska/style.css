@@ -16,7 +16,7 @@ body {
     /* justify-content: center;  */
     margin: 0;
     padding: 0;
-    
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -132,16 +132,21 @@ button:hover{
     
 }
 
-a {
+.menu{
 
-    background: rgb(255, 255, 255);
     padding: 10px 15px;
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 0px;
     border: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    opacity: 100%;
     
+}
+.menu:hover
+{
+    background:lightblue
 }
 
 a:hover{
@@ -189,10 +194,17 @@ input::placeholder
 .pacjent_header
 {
     height: 32px;
-    background: blue;
+    background: rgba(0,0,250,0.5);
     justify-content: left;
-    opacity: 50%;
     
+    
+}
+.pacjent_center
+{
+    float: left;
+    margin: -50px 0px 0px 300px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .zegar
@@ -216,9 +228,16 @@ input::placeholder
     background-color: lightblue;
     height: 100vh;
     width: 8.5cm;
+    float: left;
 }
 .lista{
     list-style: none;
     display:flex;
     margin:0px 0px 0px -50px;
+    
+}
+.main_page_icon
+{
+    width: 30px;
+    height: 30px;
 }

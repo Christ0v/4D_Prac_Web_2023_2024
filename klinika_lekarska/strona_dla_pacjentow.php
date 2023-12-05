@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="paints/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class ="pacjent_header">
        <ul class = "lista">
-        <li><a href="strona_dla_pacjentow.php">Strona główna</a></li>
-        <li><a href="strona_dla_pacjentow.php">Kalkulator BMI</a></li>
-        <li><a href="strona_dla_pacjentow.php">O nas</a></li>
+        <li><a class ="menu" href="strona_dla_pacjentow.php"><img class ="main_page_icon" src="paints/favicon.ico" alt="obrazek"></a></li>
+        <li><a class ="menu" href="strona_dla_pacjentow.php">Kalkulator BMI</a></li>
+        <li><a class ="menu" href="strona_dla_pacjentow.php">O nas</a></li>
       </ul>
     </header>
     <main class = "pacjent_left">
@@ -59,6 +60,9 @@
             var tekstDaty = dzien + '/' + miesiac + '/' + rok;
             document.getElementById('obecnaData').innerText = tekstDaty;
         </script>
-    </main>    
+    </main>
+    <section class= "pacjent_center">
+            <h1>WITAMY!</h1>
+    </section>    
 </body>
 </html>
