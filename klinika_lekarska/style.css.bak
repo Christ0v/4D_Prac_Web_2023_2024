@@ -246,7 +246,7 @@ input::placeholder
     height: 30px;
 }
 
-/*Kalkulator BMI -*/
+/*Kalkulator BMI*/
 .kalkulator_bmi
 {
     margin-left: 15cm;
