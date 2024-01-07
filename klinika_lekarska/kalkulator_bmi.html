@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="paints/favicon.ico" type="image/x-icon">
+    <title>Oblicz swoje BMI!</title>
+</head>
+<body>
+    <header class ="pacjent_header">
+        <ul class = "lista">
+         <li><a class ="menu" href="strona_dla_pacjentow.php"><img class ="main_page_icon" src="paints/favicon.ico" alt="obrazek"></a></li>
+         <li><a class ="menu" href="kalkulator_bmi.html">Kalkulator BMI</a></li>
+         <li><a class ="menu" href="strona_dla_pacjentow.php">O nas</a></li>
+       </ul>
+     </header>
+    <section class = "kalkulator_bmi">
+        <h2>BMI Calculator</h2>
+        <label class = "kalkulator_bmi_label" for="waga">Waga (kg):</label>
+        <input type="number" id="waga" placeholder="Wprowadź swoją wage">
+
+        <label class = "kalkulator_bmi_label" for="wzrost">Wzrost (cm):</label>
+        <input type="number" id="wzrost" placeholder="Wprowadź swój wzrost">
+
+        <button onclick="kaluklatorBMI()">Oblicz BMI</button>
+
+        <h3>Twoje BMI:</h3>
+        <p id="wynik"></p>
+    </section>
+
+    <script>
+        function kaluklatorBMI() {
+            var waga = document.getElementById('waga').value;
+            var wzrost = document.getElementById('wzrost').value;
+
+            if (waga === "" || wzrost === "") {
+                alert("Prosze podać odpowiednie dane");
+                return;
+            }
+
+            var bmi = (waga / ((wzrost / 100) * (wzrost / 100))).toFixed(2);
+
+            var resultElement = document.getElementById('wynik');
+            resultElement.innerHTML = "Twoje BMI: " + bmi;
+
+            var kategoriaBMI = getKategoriaBMI(bmi);
+            resultElement.innerHTML += "<br/>" + "Kategoria: " + kategoriaBMI;
+        }
+
+        function getKategoriaBMI(bmi) {
+            if (bmi < 16) {
+                return "Wygłodzenie";
+            } else if (bmi >= 16 && bmi < 16.99) {
+                return "Wychudzenie";
+            } else if (bmi >= 17 && bmi < 18.49) {
+                return "Niedowaga";
+            } else if (bmi >= 18.5 && bmi < 24.99){
+                return "Waga prawidłowa";
+            } else if (bmi >= 25.0 && bmi< 29.9){
+                return "Nadwaga";
+            } else if (bmi >= 30.0 && bmi < 34.99){
+                return "I stopień otyłości";
+            } else if (bmi >= 35.0 && bmi < 39.99){
+                return "II stopień otyłości"
+            } else {
+                return "Otyłość skrajna"
+            }
+            
+        }
+    </script>
+    <footer>
+        <a href="https://www.ikard.pl/badanie-bmi.html" target="_blank" rel="noopener noreferrer">Granice BMI</a>
+        <a href="https://pl.wikipedia.org/wiki/Wskaźnik_masy_ciała" target="_blank" rel="noopener noreferrer">Co to jest BMI?</a>
+    </footer>
+</body>
+</html>

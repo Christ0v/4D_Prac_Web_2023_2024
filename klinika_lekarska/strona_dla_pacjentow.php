@@ -11,7 +11,7 @@
     <header class ="pacjent_header">
        <ul class = "lista">
         <li><a class ="menu" href="strona_dla_pacjentow.php"><img class ="main_page_icon" src="paints/favicon.ico" alt="obrazek"></a></li>
-        <li><a class ="menu" href="strona_dla_pacjentow.php">Kalkulator BMI</a></li>
+        <li><a class ="menu" href="kalkulator_bmi.html">Kalkulator BMI</a></li>
         <li><a class ="menu" href="strona_dla_pacjentow.php">O nas</a></li>
       </ul>
     </header>
