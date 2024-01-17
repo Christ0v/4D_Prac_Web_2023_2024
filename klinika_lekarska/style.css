@@ -221,7 +221,7 @@ input::placeholder
     background-image: url(paints/calendar.jpg);
     background-size: cover;
     height: 10cm;
-    color: white;
+    color: rgb(53, 6, 6);
     border: 4px solid black;
     margin-top: 20px;
 
@@ -267,4 +267,9 @@ footer
 	width:100%;
 	height:30px;		
 	background:rgb(0,0,255,0.2);
+}
+.pogoda
+{
+    width:8.1cm;
+    height:400px;
 }

@@ -60,6 +60,7 @@
             var tekstDaty = dzien + '/' + miesiac + '/' + rok;
             document.getElementById('obecnaData').innerText = tekstDaty;
         </script>
+        <iframe class = "pogoda" src="https://cutt.ly/wwKEHeN8"></iframe>
     </main>
     <section class= "pacjent_center">
             <h1>WITAMY!</h1>

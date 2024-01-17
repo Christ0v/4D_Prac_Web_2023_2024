@@ -34,18 +34,26 @@
      </form>
      <?php
      if (!empty($_POST)) { 
+      $conn = mysqli_connect('localhost', 'root', '', 'pacjenci_db'); 
+      $zapytanie = "SELECT imie , nazwisko , haslo FROM `pacjent` ";
+      $wynik = mysqli_query($conn, $zapytanie); 
+      
    
       $imie = $_POST['imie'];
       $nazwisko = $_POST['nazwisko'];
       $haslo = $_POST['haslo'];
-      
-      if($imie == "imie" && $nazwisko == "nazwisko" && $haslo == "haslo" )
+
+      while($row = mysqli_fetch_row($wynik))
       {
-       header("Location: https://www.youtube.com"); //przykładowy mechanizm logowania
-       exit();
+        if($imie == "$row[0]" && $nazwisko == "$row[1]" && $haslo == "$row[2]" )
+        {
+         header("Location: strona_dla_pacjentow.php"); //przykładowy mechanizm logowania
+         exit();
+        }
+        else
+          echo"Wypełnij dane!";
       }
-      else
-        echo"Wypełnij dane!";
+      
     }
      ?>
     </section>
