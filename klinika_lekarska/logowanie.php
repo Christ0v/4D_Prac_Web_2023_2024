@@ -53,7 +53,7 @@
         else
           echo"Wypełnij dane!";
       }
-      
+      mysqli_close($conn);
     }
      ?>
     </section>
