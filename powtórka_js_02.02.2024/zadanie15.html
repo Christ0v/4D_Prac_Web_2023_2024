@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Przyciski</title>
+</head>
+<body>
+
+<button id="przycisk1" onclick="wyswietlTekst()">P1</button>
+<button id="przycisk2" onclick="wyswietlTekst()">P2</button>
+<button id="przycisk3" onclick="wyswietlTekst()">P3</button>
+
+<script>
+    function wyswietlTekst(){
+        var przycisk = document.getElementById("przycisk1")
+        var przycisk = document.getElementById("przycisk2")
+        var przycisk = document.getElementById("przycisk3")
+
+        var wynik = document.createElement("h1");
+        wynik.textContent = "kliknąłeś przycisk";
+
+        document.body.appendChild(wynik);
+
+    }
+
+</script>
+
+</body>
+</html>
