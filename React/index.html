@@ -15,6 +15,7 @@
     <div id = "root"></div>
     <div id = "root2"></div>
     <div id = "root3"></div>
+    <div id = "root4"></div>
 
     <script type="text/babel">
         const exampleReactElement = <h1>Hello World!</h1>;
@@ -31,6 +32,18 @@
             </div>
         );
         ReactDOM.render(element,document.getElementById('root3'));
+
+        const attributes = {
+            className: "button",
+            disabled:true,
+        }
+        const element2 = (
+            <div className = "container">
+                <button disabled = {true}> Wyłączony przycisk 3</button>
+                <button {...attributes}> Wyłączony przycisk 4</button>
+            </div>
+        )
+        ReactDOM.render(element2, document.getElementById('root4'));
     </script>
 </body>
 </html>
