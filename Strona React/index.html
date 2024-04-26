@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyLinks</title>
+    <script defer src="react.js" ></script>
+    <script defer src="react-dom.js" ></script>
+    <script defer src="babel.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon.png">
+
+</head>
+<body>
+    <header>
+        <div class = "przywitanie" id = "przywitanie"></div>
+        <div id = "tekstInformacja"></div>
+    </header>
+    <section class= "linkMenu">
+        <ul class="test">
+            <li><div id="lista1"></div></li>
+            <li><div id="lista2"></div></li>
+            <li><div id="lista3"></div></li>
+            <li><div id="lista4"></div></li>
+            <li><div id="lista5"></div></li>
+        </ul>
+        <div class = "egg" id = easterEgg></div>
+    </section>
+    
+    <script type="text/babel">
+        const helloReactElement = <h1>EasyLinks</h1>
+        ReactDOM.render(helloReactElement,document.getElementById("przywitanie"));
+
+        const informationReactElement = <h2>Wszystkie twoje linki w jednym miejscu!</h2>
+        ReactDOM.render(informationReactElement,document.getElementById("tekstInformacja"));
+
+        
+        const link1 = <h2><a href = "https://pl-pl.facebook.com/" target = "blank"><img src="Images/fLogo.png" alt="Facebook"></img> </a></h2>
+        ReactDOM.render(link1,document.getElementById("lista1"));
+
+        const link2 = <h2><a href = "https://www.instagram.com/" target = "blank"><img src="Images/iLogo.png" alt="Instagram"></img></a></h2>
+        ReactDOM.render(link2,document.getElementById("lista2"));
+
+        const link3 = <h2><a href = "https://www.youtube.com/" target = "blank"><img src="Images/yLogo.png" alt="Youtube"></img></a></h2>
+        ReactDOM.render(link3,document.getElementById("lista3"));
+
+        const link4 = <h2><a href = "https://twitter.com/" target = "blank"><img src="Images/xLogo.jpg" alt="X/Twitter"></img></a></h2>
+        ReactDOM.render(link4,document.getElementById("lista4"));
+
+        const link5 = <h2><a href = "https://tiny.pl/dwccl" target = "blank"><img src="Images/tik_Logo.png" alt=""></img></a></h2>
+        ReactDOM.render(link5,document.getElementById("lista5"));
+
+        const easterEgg = <h2><a href = "https://tiny.pl/dwc58" target = "blank">Easter Egg</a></h2>
+        ReactDOM.render(easterEgg,document.getElementById("easterEgg"));
+
+
+    </script>
+    <footer>@Krzysztof Pająk
+    </footer>
+</body>
+</html>
