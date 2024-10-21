@@ -1,0 +1,76 @@
+//zadanie 4.1
+
+file = open('przykład.txt', 'r')
+rows = file.readlines()
+
+howManyNumbers = 0
+for row in rows:
+    row = row.strip()
+    for char in wiersz:
+        if char.isdigit():
+	   howManyNumbers += 1
+
+print(howManyNumbers)
+
+//4.2
+
+file = open('przyklad.txt', 'r')
+rows = file.readlines()
+
+password = ''
+index = 0
+
+for i in range(19, len(rows), 20):
+    password += rows[i][index]
+    index += 1
+
+print(password)
+
+//4.3
+file = open('przyklad.txt', 'r')
+rows = file.readlines()
+
+password = ''
+for row in rows:
+    row = row.strip()
+    option1 = row + row[0]
+    option2 = row[len(row) - 1] + row
+
+    if option1 == option1[::-1]:
+	password += option1[len(option1) - 1 // 2]
+
+    if option2 == option2[::-1]:
+	password += option2[len(option2) - 1 // 2]
+print(password)
+
+//4.4
+file = open('przyklad.txt', 'r')
+rows = file.readlines()
+
+password = ''
+for row in rows:
+    row = row.strip()
+    number1 = -1
+    number2 = -1
+
+    for char in row:
+        if char.isdigit() and number1 == -1:
+           number1 = znak
+        elif znak.isdigit():
+             number2 = char
+	     ascii = number1 + number2
+
+             if int(ascii)>= 65 and int(ascii) <= 90:
+		letter = chr(int(ascii))
+		password += letter
+
+             number1 = -1
+	     number2 = -1
+
+	if password.endiwth('xxx'):
+	   break
+
+print(password)
+
+
+
