@@ -55,7 +55,7 @@ function App() {
         </div>
 
         <div className='form-group'>
-          <label htmlFor='numerkursu'>NumerKursu:</label>
+          <label htmlFor='numerkursu'>Numer kursu:</label>
           <input
           type='number'
           id='numerkursu'
