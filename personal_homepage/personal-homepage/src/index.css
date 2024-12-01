@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-shadow: 10px 10px 5px blue;
 }
 
 code {
@@ -13,13 +14,14 @@ code {
 }
 .thisis{
   font-size: 10px;
-  margin-right: 250px;
+  margin-right: 249px;
 }
 .hireMe{
   margin-right: 195px;
 }
 .descrip{
-  margin-right: 45px;
+width: 30;
+margin-left: 104px;
 }
 .nameName{
   margin-right: 10px;
@@ -27,8 +29,53 @@ code {
 .imagePerson{
   margin-right: 600px;
   margin-top: -150px;
+  border-radius: 100px;
 }
 .tablica, .tablica2{
   display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgb(120, 120, 120, 0.2);
 }
+.switchTheme{
+  position: relative;
+  left: 600px;
+  bottom: 250px;
+}
+.switchText{
+  position: relative;
+  left: 500px;
+  bottom: 225px;
+}
+.gitLogo{
+  position: static;
+  
+  
+}
+.portfolio1{
+  background-color: lightgray;
+  width: 500px;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+.portfolio{
+  background-color: rgb(120, 120, 120, 0.2);
+  width: 500px;
+  border: 5px solid black;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.portfolio:hover
+{
+  border-color: blue;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap; /* Umożliwia zawijanie elementów */
+}
+footer{
+  margin-right: 16cm;
+}
+
